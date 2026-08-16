@@ -33,7 +33,7 @@ The TV must be reachable from the computer running this project. The remote prot
 ### Option 1: Using Git (Recommended)
 Open Command Prompt and run:
 ```bash
-git clone [https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git](https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git) android-tv-web-remote
+git clone https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git android-tv-web-remote
 cd android-tv-web-remote
 npm install && npm start
 ```
