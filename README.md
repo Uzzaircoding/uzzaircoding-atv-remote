@@ -37,6 +37,13 @@ git clone [https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git](https://
 cd android-tv-web-remote
 npm install && npm start
 ```
+Then open:
+
+```text
+http://localhost:3000
+```
+In a web browser
+
 ### Option 2: Using download link
 Click the link below 
 Click [here to download the project files](https://github.com/Uzzaircoding/uzzaircoding-atv-remote/archive/refs/heads/main.zip).
@@ -54,6 +61,7 @@ Then open:
 ```text
 http://localhost:3000
 ```
+In a web browser
 
 ## Pairing
 
