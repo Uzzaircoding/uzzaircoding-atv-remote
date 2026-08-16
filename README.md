@@ -36,7 +36,8 @@ Open Command Prompt and run:
 ```bash
 git clone [https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git](https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git) android-tv-web-remote
 cd android-tv-web-remote
-npm install
+npm install```
+
 
 Then open:
 
