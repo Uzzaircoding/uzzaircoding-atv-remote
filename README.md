@@ -29,14 +29,14 @@ The TV must be reachable from the computer running this project. The remote prot
 - Network access to TCP 6466 and 6467
 
 ## Install
-First download:everything inside this project in one folder and name android-tv-web-remote it then in your command promt run:
+## Installation
 
+### Option 1: Using Git (Recommended)
+Open Command Prompt and run:
 ```bash
-git clone https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git
+git clone [https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git](https://github.com/Uzzaircoding/uzzaircoding-atv-remote.git) android-tv-web-remote
 cd android-tv-web-remote
 npm install
-npm start
-```
 
 Then open:
 
