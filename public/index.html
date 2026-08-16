@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Android TV Web Remote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section id="setup" class="card">
+      <div class="brand">ANDROID TV</div>
+      <h1>Web Remote</h1>
+      <p class="muted">Control your TV locally without ADB.</p>
+
+      <label for="ip">TV IP address</label>
+      <div class="ip-row">
+        <input id="ip" inputmode="decimal" placeholder="192.168.0.52" autocomplete="off">
+        <button id="scan" class="secondary">Scan network</button>
+      </div>
+
+      <div id="devices" class="devices"></div>
+
+      <button id="connect" class="primary">Connect / Pair</button>
+      <p id="setupStatus" class="status"></p>
+
+      <div id="pairing" class="pairing hidden">
+        <h2>Enter the TV code</h2>
+        <p>Look at your TV. It should be showing a 6-character pairing code.</p>
+        <input id="code" maxlength="6" autocomplete="one-time-code" placeholder="ABC123">
+        <button id="pair" class="primary">Pair TV</button>
+      </div>
+    </section>
+
+    <section id="remote" class="card hidden">
+      <div class="remote-head">
+        <div>
+          <div class="brand">ANDROID TV</div>
+          <h1>Remote</h1>
+          <p id="connection" class="muted"></p>
+        </div>
+        <button id="disconnect" class="secondary">Disconnect</button>
+      </div>
+
+      <div class="top-buttons">
+        <button data-key="power">⏻</button>
+        <button data-key="settings">⚙</button>
+        <button data-key="input">INPUT</button>
+      </div>
+
+      <div class="dpad">
+        <button data-key="up" class="up">▲</button>
+        <button data-key="left" class="left">◀</button>
+        <button data-key="ok" class="ok">OK</button>
+        <button data-key="right" class="right">▶</button>
+        <button data-key="down" class="down">▼</button>
+      </div>
+
+      <div class="bottom-buttons">
+        <button data-key="back">← BACK</button>
+        <button data-key="home">⌂ HOME</button>
+        <button data-key="menu">☰ MENU</button>
+      </div>
+
+      <div class="media">
+        <button data-key="previous">⏮</button>
+        <button data-key="rewind">◀◀</button>
+        <button data-key="playpause" class="play">▶ / ❚❚</button>
+        <button data-key="fastforward">▶▶</button>
+        <button data-key="next">⏭</button>
+      </div>
+
+      <div class="volume">
+        <button data-key="mute">🔇</button>
+        <button data-key="voldown">−</button>
+        <div>VOLUME</div>
+        <button data-key="volup">+</button>
+      </div>
+
+      <p id="remoteStatus" class="status"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
